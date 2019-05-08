@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /ProjetGlaceBack/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^index.html$ index.php?c=welcome [L]
+RewriteRule ^listeProduit.html$ index.php?c=adminController&m=testerLogin [L]
